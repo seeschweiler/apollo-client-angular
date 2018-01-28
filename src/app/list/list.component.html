@@ -1,0 +1,10 @@
+<div *ngFor="let course of courses | async">
+  <div class="card" style="width: 100%; margin-top: 10px">
+    <div class="card-body">
+      <h5 class="card-title">{{course.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">by {{course.author}}</h6>
+      <p class="card-text">{{course.description}}</p>
+      <a href="{{course.url}}" class="card-link">Go to course ...</a>
+    </div>
+  </div>
+</div>
